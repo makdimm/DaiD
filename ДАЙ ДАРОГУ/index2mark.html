@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.2.1.min.js"></script>
+
+
+</head>
+<body>
+	<header class="main">
+				<nav>
+					<ul>
+						<li><a href="">Главная</a></li>
+						<li><a href="">Альбомы</a></li>
+						<li><a href="">Друзья</a></li>
+						<li><a href="">Новости</a></li>
+						<li><a href="for_group.html">О группе</a></li>
+						<li><a href="">Контакты</a></li>
+
+					</ul>
+				</nav>
+	</header>
+	<section>
+		<div class="info_video">
+			<video src="vvideo/DD.mp4" autoplay loop muted>
+		</div>
+		<div class="left_col">
+				<a href=""><img src="img/you.png" alt=""></a>
+				<a href=""><img src="img/insta.png" alt=""></a>
+				<a href=""><img src="img/vk.png" alt=""></a>
+				<a href=""><img src="img/face.png" alt=""></a>
+		</div>
+					
+		<div class="swing">
+				<img src="img/logo.png" alt="">
+		</div>
+		
+	</section>
+		<div class="right_col">
+		
+			<div class="block_height">
+			</div>
+			<img src="img/slide.png" alt="">
+
+				
+		</div>		
+				
+	<footer class="fmain">
+		<div id="haha">
+		<a href=""><img src="img/BrainIT.png" alt=""></a>
+		</div>
+	</footer>
+	<script src="anime-master/anime.min.js"></script>
+	<script class="none">
+
+        var moveup = anime({
+			  targets: 'footer',
+			  bottom: '-140px',
+			  direction: 'reverse',
+			  duration:'2000',
+			  easing:'linear'
+			});
+		var moveright = anime({
+			targets: '.left_col',
+			left:'-40px',
+			direction:'reverse',
+			duration:'2000',
+			easing:'linear'
+
+		})
+		var movedown = anime({
+			targets: "header.main",
+			top: '-87.29px',
+			direction:'reverse',
+			duration:'2000',
+			easing:'linear'
+		})
+		var moveleft = anime({
+			targets:'.right_col',
+			right:'400px',
+			direction:'reverse',
+			duration:'2000',
+			easing:'linear'
+		})
+		$('.right_col').click(function(){
+			$('.right_col').toggleClass('active');
+		});
+		
+	</script>
+</body>
+</html>
+
